@@ -17,6 +17,32 @@
   })
 })()
 
+/* ======= BACK TO TOP SCRIPT =======  */
+
+const mybutton = document.getElementById("envol-btt");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 400 ||
+    document.documentElement.scrollTop > 400
+  ) {
+    mybutton.classList.add('customshow')
+  } else {
+    mybutton.classList.remove('customshow')
+  }
+}
+
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 /* ======= NAVBAR JS - COLAPSAR AL HACER CLICK =======  */
 
 const navbarcoll = document.getElementById('navbarSupportedContent');
@@ -29,10 +55,15 @@ changeicon.onclick = function () {
 document.onclick = function (clickevent) {
 	if (clickevent.target.id !== 'navbarSupportedContent' && clickevent.target.id !== 'menu-icon') {
 		changeicon.classList.remove('fa-times');
-		navbarcoll.classList.remove('show');
-
+		bsCollapse.hide();
 	}
 }
+
+const navlinks = document.querySelectorAll('.nav-item');
+const bsCollapse = new bootstrap.Collapse(navbarcoll, { toggle: false });
+navlinks.forEach((click) => {
+    click.addEventListener('click', () => { bsCollapse.hide() })
+})
 
 /* ======= ICONOS HABILIDADES - TRANSICION =======  */
 const hablink = document.getElementById('hablink');
