@@ -72,7 +72,6 @@ ul {
   visibility: visible;
 }
 
-
 /* ==================== BARRA DE NAVEGACION ==================== */
 
 .navbar {
@@ -91,12 +90,10 @@ ul {
   margin: 0 auto;
   flex-wrap: inherit;
   align-items: center;
-
 }
 
 @media only screen and (max-width: 1440px) {
   .nb-container {
-
     width: 90%;
     max-width: 1200px;
   }
@@ -144,7 +141,6 @@ ul {
   position: relative;
   word-break: break-word;
   overflow: hidden;
-  /* box-sizing: border-box; */
 }
 
 @media only screen and (max-width: 457px) {
@@ -162,7 +158,6 @@ ul {
   margin: 0 auto;
   width: 95%;
   max-width: 1400px;
-  /* box-sizing: border-box; */
 }
 
 @media only screen and (max-width: 1440px) {
@@ -332,9 +327,7 @@ ul {
   padding-top: 0px;
   width: 90%;
   margin: 0px auto;
-  /* box-sizing: border-box; */
   display: flex;
-  /* flex-direction: row; */
   overflow: hidden;
 }
 
@@ -714,7 +707,6 @@ ul {
   width: 95%;
   max-width: 1400px;
   margin: 0px auto;
-  box-sizing: border-box;
 }
 
 .envol-leng {
@@ -744,7 +736,6 @@ ul {
   width: 100%;
   max-width: 700px;
   margin: 0px auto 50px;
-  box-sizing: border-box;
   font-weight: 700;
   font-size: 41.4px;
 }
@@ -757,7 +748,6 @@ ul {
 
 .leng {
   padding: 20px;
-  box-sizing: border-box;
   width: 23%;
   min-width: 240px;
 }
@@ -915,7 +905,6 @@ ul {
 }
 
 .infocontact {
-
   margin-bottom: 0px;
   width: 100%;
 }
@@ -929,7 +918,6 @@ ul {
   max-width: 400px;
   min-width: 400px;
 }
-
 
 @media only screen and (max-width: 1024px) {
   .form-r {
@@ -973,7 +961,6 @@ ul {
   border-radius: 30px;
   max-height: 200px;
   resize: none;
-
 }
 
 .msj-form {
@@ -993,7 +980,6 @@ ul {
 }
 
 .msj-form:focus {
-
   color: var(--bs-body-color);
   background-color: var(--bs-form-control-bg);
   border-color: rgb(134, 183, 254);
